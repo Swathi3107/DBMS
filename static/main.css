@@ -1,0 +1,63 @@
+body, html {
+  height: 100%;
+}
+.bg {
+  /* The image used */
+  background-image: url("a6.jpg");
+  /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+        background-repeat: repeat-y;
+}
+.bg1 {
+  /* The image used */
+  background-image: url("a3.jpg");
+ /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+}
+h1 {
+    background-color:#FFF;
+  color:#000;
+}
+h3 {
+    background-color:#FFF;
+  color:#000;
+  }
+p {
+    background-color:#FFF;
+  color:#000;
+}
+.bg2 {
+background-color: Orange;
+}
+.bg3 {
+  /* The image used */
+  background-image: url("a5.jpg");
+
+
+  /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+}
+tr {
+  background-color:rgba(212, 125, 85, 0.5);
+  color:white;
+}
+.bg4 {
+  /* The image used */
+  background-image: url("a6.jpg");
+  /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+}

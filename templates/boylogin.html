@@ -1,0 +1,76 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h2 align="center" style="color:white;">LOGIN</h2>
+  <form action="" method="POST">
+    <div class="form-group">
+      <h5 style="color:white;">Login Name</h5>
+      <input type="text" name="name" class="form-control" value={{request.form.name}}>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+<br>
+<br>
+<table class="table table-condensed">
+    <tr>
+        <th>Order ID</th>
+        <th>Customer Name</th>
+        <th>Address</th>
+        <th>Phone no</th>
+        <th>Food Item</th>
+        <th>Quantity</th>
+        <th>Shop Name</th>
+        <th>Shop Address</th>
+    </tr>
+    <tr>
+        <td>
+            {% for foodd in ord %}
+                {{ foodd[0] }}
+            <br>
+            {% endfor %}
+        </td>
+        <td>
+            {% for name in names %}
+                {{ name }}
+            <br>
+            {% endfor %}
+        </td>
+        <td>
+            {% for a in address %}
+                {{ a }}
+            <br>
+            {% endfor %}
+        </td>
+        <td>
+            {% for p in phnos %}
+                {{ p }}
+            <br>
+            {% endfor %}
+        </td>
+        <td>
+            {% for it in items %}
+                {{ it[0] }}
+            <br>
+            {% endfor %}
+        </td>
+        <td>
+            {% for q in quan %}
+                {{ q[0] }}
+            <br>
+            {% endfor %}
+        </td>
+        <td>
+            {% for s in shop %}
+                {{ s }}
+            <br>
+            {% endfor %}
+        </td>
+        <td>
+            {% for ss in shopa %}
+                {{ ss }}
+            <br>
+            {% endfor %}
+        </td>
+    </tr>
+</table>
+{% endblock %}

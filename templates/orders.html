@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h2 align="center"  style="font-size:50px;color:white;background-color:rgba(212, 125, 85, 0.5);"><b>ORDERS </b></h2>
+<h4 style="color:white;"> Welcome {{session.username}}</h4>
+<table class="table table-condensed">
+    <tr>
+        <th>HOTEL</th>
+        <th>FOOD NAME</th>
+        <th>PRICE</th>
+        <th>QUANTITY</th>
+        <th>ITEM TOTAL</th>
+    </tr>
+    <br>
+{% for order in orderlist %}
+<tr>
+    <td>{{order[0][0]}}</td>
+    <td>{{order[1]}}</td>
+    <td>{{order[3]}}</td>
+    <td>{{order[2]}}</td>
+    <td>{{order[4]}}</td>
+</tr>
+{% endfor %}
+    </table>
+<button type="submit" class="btn btn-info"><a href="bill" >SUBMIT</a> </button>
+{% endblock %}

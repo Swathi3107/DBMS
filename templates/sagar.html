@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+
+<h1 align="center" style="background-color:rgba(255, 92, 75,0.25);border:2px solid Tomato;">Shri Sagar</h1>
+<br>
+<form action="/orderssagar" method="post">
+<table class="table table-striped">
+    <tr>
+        <th style="background-color:rgba(255, 99, 71,0.65);">FOOD</th>
+        <th style="background-color:rgba(255, 99, 71,0.65);">PRICE</th>
+        <th style="background-color:rgba(255, 99, 71,0.65);">QUANTITY</th>
+    </tr>
+    <tr>
+    <td style="background-color:rgb(255, 187, 75);">Masala Dosa</td>
+    <td style="background-color:rgb(255, 187, 75);">40</td>
+    <td style="background-color:rgb(255, 187, 75);"><input type="number" name="no1" min="0" max="10"  value="0"></input></td>
+    </tr>
+    <tr>
+    <td style="background-color:rgba(255, 187, 75,0.65);">Rava Idly</td>
+    <td style="background-color:rgba(255, 187, 75,0.65);">35</td>
+    <td style="background-color:rgba(255, 187, 75,0.65);"><input type="number" name="no2" min="0" max="10"  value="0"></input></td>
+    </tr>
+    <tr>
+    <td style="background-color:rgb(255, 187, 75);">Mangaluru Bajji</td>
+    <td style="background-color:rgb(255, 187, 75);">30</td>
+    <td style="background-color:rgb(255, 187, 75);"><input type="number" name="no3" min="0" max="10"  value="0"></input></td>
+    </tr>
+    <tr>
+    <td style="background-color:rgba(255, 187, 75,0.65);">Idly Vada</td>
+    <td style="background-color:rgba(255, 187, 75,0.65);">25</td>
+    <td style="background-color:rgba(255, 187, 75,0.65);"><input type="number" name="no4" min="0" max="10"  value="0"></input></td>
+    </tr>
+    <tr>
+    <td style="background-color:rgb(255, 187, 75);">Khara Bath</td>
+    <td style="background-color:rgb(255, 187, 75);">30</td>
+    <td style="background-color:rgb(255, 187, 75);"><input type="number" name="no5" min="0" max="10"  value="0"></input></td>
+    </tr>
+    <tr>
+    <td style="background-color:rgba(255, 187, 75,0.65);">Kesari Bath</td>
+    <td style="background-color:rgba(255, 187, 75,0.65);">35</td>
+    <td style="background-color:rgba(255, 187, 75,0.65);"><input type="number" name="no6" min="0" max="10"  value="0"></input></td>
+    </tr>
+
+
+</table>
+    <button type="submit" class="btn btn-primary">SUBMIT</button>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>OrderFood</title>
+      <link rel="stylesheet" type="text/css" href="static/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="bg2">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% include 'includes/_navbar.html' %}
+    <div class="container">
+      {% include 'includes/_messages.html' %}
+<h2 align="center">REGISTER</h2>
+{% from "includes/_formhelpers.html" import render_field %}
+<form method="post" action="">
+    <div class="form-group">
+        {{render_field(form.fname,class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.lname,class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.phno,class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.gender)}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.age,class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.address,class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.email,class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.password,class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.confirm,class_="form-control")}}
+    </div>
+    <input type="submit" class="btn btn-primary"  value="Submit">
+</form>
+    </div>
+</div>
+  </body>
+</html>
+
